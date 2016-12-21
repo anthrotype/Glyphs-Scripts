@@ -1007,7 +1007,7 @@ def readGlyphsFile(filePath):
 			# use glyphsLib's Parser for ASCII plist.
 			# Download it from: https://github.com/googlei18n/glyphsLib
 			from glyphsLib.parser import Parser
-			GlyphsDoc = Parser(dict_type=dict).parse(data)
+			GlyphsDoc = Parser().parse(data)
 	else:
 		# on OS X, use NSDictionary
 		pool = NSAutoreleasePool.alloc().init()
